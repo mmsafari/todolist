@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+ *{
+    font-family: 'Raleway',Arial, 'Raleway', sans-serif ;
+ }
+ body{
+    background-color: #352f5b;
+ }
+.header{
+   padding-right: 15px;
+   padding-left: 15px;
+   margin-right: auto;
+   margin-left: auto;
+   text-align: center;
+   width: 35%;
+   margin-bottom: 2.5rem;
+ }
+ h2{
+    text-align: center;
+    color: #f8f9fa;
+    font-size: 2.5rem;
+    margin: 30px;
+    margin-bottom: 2.5rem !important;
+    font-weight: 100;
+ }
+ #todoInput{
+   width: 60%;
+   border:none;
+   padding: 10px;
+   border-radius: .25rem;
+   font-size: 1em;
+ }
+ #todoInput:focus{
+   box-shadow: 0 0 0 .2rem rgba(0, 123, 255, 0.925);
+   background-color: #f8f9fa;
+ }
+ .addBtn{
+   background-color: #fff;
+   border-radius: 5px;
+   border: none;
+   padding: 10px;
+   cursor: pointer;
+   font-size: 1em;
+ }
+ .addBtn:hover{
+   box-shadow: 0 0 0 .2rem rgba(0, 123, 255, 0.925);
+   transition: .2s;
+ }
+#listUl{
+   padding-right: 15px;
+   padding-left: 15px;
+   margin-right: auto;
+   margin-left: auto;
+   width: 28%;
+   margin-bottom: 2.5rem;
+}
+#listUl li{
+   list-style-type: none;
+   background: #423a6f;
+   cursor: pointer;
+   position: relative;
+   padding: .85rem 1.5rem;
+   border: 1px solid rgba(0,0,0,.125);
+   color: #f8f9fa;
+   font-size: 1.1rem;
+   outline: none;
+}
+#listUl li:hover{
+   opacity: .8;
+   transition: .3s;
+}
+#listUl li:nth-child(odd){
+   background-color: #4a4178;
+}
+#listUl li:first-child{
+   border-top-left-radius: .30rem;
+   border-top-right-radius: .30rem ;
+}
+#listUl li:last-child{
+   border-bottom-left-radius: .30rem;
+   border-bottom-right-radius: .30rem ;
+}
+
+.delete{
+   position: absolute;
+   right: 0;
+   top: 0;
+   padding: 12px 16px;
+   transition: .3s;
+}
+.delete:hover{
+   color: #d64141;
+}
+.checked {
+   background: #888;
+   color: #fff;
+   text-decoration: line-through;
+ }
+ .checked::before{
+   content: '';
+   position: absolute;
+   border-color: #fff;
+   border-style: solid;
+   border-width: 0 2px 2px 0;
+   top: 11px;
+   left: 10px;
+   transform: rotate(45deg);
+   height: 15px;
+   width: 7px;
+ }
